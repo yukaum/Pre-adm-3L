@@ -1,7 +1,7 @@
 const name = prompt("SEJA BEM VINDA \n Qual o seu nome?");
 const question = prompt("Que tal responder algumas perguntinhas rápidas? \n 1.Sim \n 2.Não");
 
-
+document.getElementById("welcome").innerHTML= "Olá, " + name;
 if (question == 1)
  {
   const question01 = prompt("Onde nasceu Machado de Assis? \n A:Brasil \n B:Portugal \n C:Espanha");      
@@ -9,6 +9,7 @@ if (question == 1)
   const question03 = prompt("onde nasceu Pablo Neruda? \n A:Brasil \n B:Chile \n C:Peru");
   
   
+
   if (question01 == "A"){
     document.getElementById("correta01").innerHTML= "01";
     } else {
@@ -30,6 +31,4 @@ if (question == 1)
 }
 
 
-
-document.getElementById("welcome").innerHTML= "Olá, " + name;
 
